@@ -164,3 +164,27 @@ h3,h4{
     display: inline-block;
   }
 }
+.answers_collection{
+  flex-direction: column;
+  >div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .button_replacement{
+    display: block;
+  }
+}
+body{
+  font-size: 12px;
+}
+@media all and (min-width: 640px){
+  body{
+    font-size: 16px;
+  }
+  .answers_collection{
+    flex-direction: row;
+    .button_replacement{
+      display: inline-block;
+    }
+  }
+}
